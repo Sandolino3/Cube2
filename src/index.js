@@ -1,6 +1,6 @@
 const express = require('express');
 const handlebars = require('express-handlebars')
-
+const route = require('./routes')
 const app = express();
 
 app.use('/static',express.static('public'));
@@ -12,17 +12,9 @@ app.set('view engine','hbs')
 app.set('views','./src/views')
 app.set('index',)
 
-app.get('/',(req,res)=>{
-    res.render('index')
-})
+app.use(route)
 
-app.get('/create', (req,res)=>{
-    res.render('create')
-})
 
-app.get('/about',(req,res)=>{
-    res.render('about')
-})
 
 
 app.listen(5000, ()=>console.log('Server start on port 5000.........'));
