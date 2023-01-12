@@ -16,5 +16,13 @@ app.get('/',(req,res)=>{
     res.render('index')
 })
 
+app.get('/create', (req,res)=>{
+    res.render('create')
+})
+
+app.get('/about',(req,res)=>{
+    res.render('about')
+})
+
 
 app.listen(5000, ()=>console.log('Server start on port 5000.........'));
