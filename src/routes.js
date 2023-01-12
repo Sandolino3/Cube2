@@ -6,7 +6,5 @@ const router = express.Router()
 
 router.get('/', homecontroler.index)
 router.use('/cube',cubeControler)
-router.get('/about',(req,res)=>{
-    res.render('about')
-})
+router.get('/about', homecontroler.about)
 module.exports = router
