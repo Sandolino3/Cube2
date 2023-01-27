@@ -1,34 +1,68 @@
 [
     {
+        "id": 0,
         "name": "Gan356",
         "imageURL": "https://ae01.alicdn.com/kf/HTB1CSddXRxRMKJjy0Fdq6yifFXa6/Gan-356-Air-SM-3x3-Black-Magic-cube-GAN-Air-SM-Magnetic-3x3x3-Speed-cube-gans.jpg",
         "difLevel": 3
     },
     {
+        "id": 1,
         "name": "Eco-Dark",
         "imageURL": "https://thingsidesire.com/wp-content/uploads/2018/06/Eco-Dark-Rubik%E2%80%99s-Cube2.jpg",
         "difLevel": 6
     },
     {
+        "id": 2,
         "name": "Pyraminx",
         "imageURL": "https://images-na.ssl-images-amazon.com/images/I/61izOzq%2BBAL._SY355_.jpg",
         "difLevel": 1
     },
     {
+        "id": 3,
         "name": "Megaminx",
         "imageURL": "https://images-na.ssl-images-amazon.com/images/I/61HpQqVQ37L._SY355_.jpg",
         "difLevel": 4
     },
     {
+        "id": 4,
         "name": "CubicRube",
         "description": "asdasda",
         "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Ice-Cube_2014-01-09-Chicago-photoby-Adam-Bielawski.jpg/250px-Ice-Cube_2014-01-09-Chicago-photoby-Adam-Bielawski.jpg",
         "difLevel": "6"
     },
     {
+        "id": 5,
         "name": "BobonicPlague",
         "description": "asdasdasd",
         "imageURL": "https://pics.me.me/my-friend-can-solve-a-rubiks-cube-all-the-way-42480154.png",
+        "difLevel": "4"
+    },
+    {
+        "id": 6,
+        "name": "Harry Cuber",
+        "description": "adsa",
+        "imageURL": "https://pics.me.me/my-friend-can-solve-a-rubiks-cube-all-the-way-42480154.png",
+        "difLevel": "5"
+    },
+    {
+        "id": 7,
+        "name": "Harry Cuber",
+        "description": "asdasd",
+        "imageURL": "https://pics.me.me/my-friend-can-solve-a-rubiks-cube-all-the-way-42480154.png",
+        "difLevel": "5"
+    },
+    {
+        "id": 8,
+        "name": "Harry Cuber",
+        "description": "asdasd",
+        "imageURL": "https://pics.me.me/my-friend-can-solve-a-rubiks-cube-all-the-way-42480154.png",
+        "difLevel": "5"
+    },
+    {
+        "id": 9,
+        "name": "Till end of time ",
+        "description": "Very good cube",
+        "imageURL": "https://upload.wikimedia.org/wikipedia/commons/6/61/Rubiks_cube_solved.jpg",
         "difLevel": "4"
     }
 ]
