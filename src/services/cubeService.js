@@ -11,3 +11,12 @@ exports.save = (cube) =>{
 }
 
 exports.getOne = (id)=> cubes[id];
+
+exports.getAll = (search = '', from = 0, to = 6)=> {
+    const result = cubes
+    .filter(x => x.name.toLocaleLowerCase().includes(search?.toLocaleLowerCase()))
+    .filter(x=> x.difLevel >= from && x.difLevel <= to)
+    // .filter(x=> !(x.difLevel >= to))
+
+    return result;
+};
