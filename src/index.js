@@ -1,21 +1,18 @@
 const express = require('express');
-const handlebars = require('express-handlebars')
 const route = require('./routes')
 const app = express();
+const {initData}= require('./config/database')
+
+require('./config/handlebars')(app)
+
 
 app.use('/static',express.static('public'));
 app.use(express.urlencoded({extended:true}))
-
-app.engine('hbs', handlebars.engine({
-    extname:'hbs'
-}))
-app.set('view engine','hbs')
-app.set('views','./src/views')
-app.set('index',)
-
 app.use(route)
 
+initData()
+.then(()=>{
+    app.listen(5000, ()=>console.log('Server start on port 5000.........'));
 
-
-
-app.listen(5000, ()=>console.log('Server start on port 5000.........'));
+})
+.catch((err) => console.log("canot start", err))
