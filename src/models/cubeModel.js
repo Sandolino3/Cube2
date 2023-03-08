@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const cubeSchema = new mongoose.Schema({
-    _id: mongoose.Types.ObjectId,
+
     name:{
         type: String,
         required: true,
@@ -11,19 +11,21 @@ const cubeSchema = new mongoose.Schema({
         required: true,
         maxlength: 120,
     },
-    imageUrl:{
+    imageURL:{
         type: String,
         required: true,
     },
-    difficultyLevel:{
+    difLevel:{
         type: Number,
         required: true,
+        min:1,
+        max:6,
 
     }
 })
 
-cubeSchema.path('imageUrl').validate(function(){
-    return this.name.startsWith('http')
+cubeSchema.path('imageURL').validate(function(){
+    return this.imageURL.startsWith('http')
 },'imageUrl should be link')
 
 
