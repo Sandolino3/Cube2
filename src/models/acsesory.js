@@ -8,10 +8,19 @@ const acsesorySchema = new mongoose.Schema({
     imageUrl:{
         type: String,
         required: true,
+    },
+    description:{
+        type: String,
+        required: true,
+        maxLength: 120,
     }
 
 })
 
 acsesorySchema.path('imageUrl').validate(function(){
-    return this.imageUrl.startsWith('http')
-},'imageUrl should be link')
+    return this.imageUrl.startsWith('http');
+},'imageUrl should be link');
+
+const Acsesory = mongoose.model('Acsesory', acsesorySchema);
+
+module.exports = Acsesory;
