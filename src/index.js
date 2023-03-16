@@ -5,7 +5,6 @@ const {initData}= require('./config/database')
 
 require('./config/handlebars')(app)
 
-
 app.use('/static',express.static('public'));
 app.use(express.urlencoded({extended:true}))
 app.use(route)

@@ -1,7 +1,8 @@
 const fs = require('fs/promises');
-const cubes = require('../db.json');
-const path = require('path')
-const Cube = require('../models/cubeModel')
+const Cube = require('../models/Cube')
+
+// const cubes = require('../db.json');
+// const path = require('path')
 
 exports.save = (cube) =>{
 
