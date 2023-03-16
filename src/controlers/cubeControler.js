@@ -27,4 +27,9 @@ router.get('/:id',async (req,res)=>{
     const cube = await cubeService.getOne(req.params.id).lean()
     res.render('details',{cube})
 })
+router.get('/:cubeId/attach',async (req,res)=>{
+    const cube = await cubeService.getOne(req.params.cubeId).lean()
+    console.log(cube);
+    res.render('attachAccessory',{cube})
+})
 module.exports = router

@@ -24,3 +24,4 @@ exports.getAll = (search = '', from = 0, to = 6)=> {
     // return result;
     return Cube.find().lean();
 };
+
