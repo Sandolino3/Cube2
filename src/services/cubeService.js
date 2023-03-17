@@ -14,7 +14,7 @@ exports.save = (cube) =>{
 
 }
 
-exports.getOne = (id)=> Cube.findById(id);
+exports.getOne = (id)=> Cube.findById(id).populate('acsesories');
 
 exports.getAll = (search = '', from = 0, to = 6)=> {
     // const result = cubes
