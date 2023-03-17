@@ -14,7 +14,7 @@ const acsesorySchema = new mongoose.Schema({
         required: true,
         maxLength: 120,
     },
-    cube: [
+    cubes: [
     {
         type: mongoose.Types.ObjectId,
         ref:'Cube'
